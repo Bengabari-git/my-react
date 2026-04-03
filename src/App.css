@@ -308,10 +308,7 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1.5rem;
 }
-/* .d1{
-    background: url(../assets/ChatGPT\ Image\ Oct\ 11\,\ 2025\,\ 09_44_44\ PM.png) no-repeat;
-    background-size: cover;
-} */
+
 .d2 {
 	background: url(./assets/premium_photo-1661877737564-3dfd7282efcb\ \(2\).png)
 		no-repeat;
