@@ -1,5 +1,5 @@
 import { Navbar} from "./Components/cp2";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
 // import Contact from "./Components/Contact"
 import Loader from "./Components/Loader";
 import Layout from "./Components/Layout";
@@ -30,7 +30,7 @@ function MyApp() {
 
 	return (
 		<div>
-			<BrowserRouter>
+			<HashRouter>
 				<Suspense fallback={<Loader />}>
 					<Layout>
 						<Navbar></Navbar>
@@ -44,7 +44,7 @@ function MyApp() {
 						</Routes>
 					</Layout>
 				</Suspense>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }
