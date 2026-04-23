@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
-import { BrowserRouter, NavLink, Route, Routes,Link } from "react-router-dom";
+import { useEffect, useState} from "react";
+import { BrowserRouter, NavLink} from "react-router-dom";
 // import'../@mui/material'
 
 // import { CircularProgress } from "../@mui/material";
 
 function Navbar() {
+	const [titleText,setTitle] = useState("");
+
 	let navStyle = ({ isActive }) => ({
 		color: isActive ? "var(--blue-color)" : "var(--white-bg)",
 		backgroundColor: isActive ? "var(--white-bg)" : "var(--blue-color)",
@@ -12,9 +14,9 @@ function Navbar() {
 			isActive ? "5px solid var(--blue-color)" : "var(--white-bg)",
 		borderRadius: isActive ? "0px" : "16px",
 	});
-
 	return (
 		<>
+		
 			<div className="body">
 				<nav className="navbar">
 					<div className="logoname">BengAI</div>
@@ -24,7 +26,8 @@ function Navbar() {
 							<NavLink
 								style={navStyle}
 								className="so n"
-								to="/home">
+								to="/home"
+								>
 								Home
 							</NavLink>
 						</li>
@@ -33,7 +36,8 @@ function Navbar() {
 							<NavLink
 								style={navStyle}
 								className="so n"
-								to="/about">
+								to="/about"
+								>
 								About
 							</NavLink>
 						</li>
@@ -41,7 +45,8 @@ function Navbar() {
 							<NavLink
 								style={navStyle}
 								className="so n"
-								to="/contact">
+								to="/contact"
+								>
 								Contact
 							</NavLink>
 						</li>
@@ -50,7 +55,10 @@ function Navbar() {
 			</div>
 			
 		</>
+		
 	);
 }
 
-export { Navbar };
+
+
+export { Navbar};

@@ -1,4 +1,7 @@
 function About(){
+    let title = document.getElementById("title");
+	title.textContent = "Beng AI | About";
+
     return(
         <div>
             <h3></h3>

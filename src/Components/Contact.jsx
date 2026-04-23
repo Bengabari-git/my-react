@@ -1,12 +1,14 @@
  export default function Contact(){
-    
+    let title = document.getElementById("title");
+	title.textContent = "Beng AI | Contact";
+
     return(
         <div className="contact">
             <h2>Contact me</h2>
             <div className="platforms">
                 <div className="handles">
                     <div className="medi ">
-                        <div>Chat me on WhatsApp</div>
+                        <div>Chat on WhatsApp</div>
                         <div className="icon i1" ></div>
                     </div>
                     <div className="medi">
@@ -14,7 +16,7 @@
                         <div className="icon i2" ></div>
                     </div>
                     <div className="medi">
-                        <div>Follow me on X</div>
+                        <div>Follow on X</div>
                         <div className="icon i3" ></div>
                     </div>
                 </div>

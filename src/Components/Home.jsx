@@ -6,33 +6,42 @@ import About from "./About";
 // import { Button } from "bootstrap";
 
 function HomeContent() {
+	let title = document.getElementById("title");
+	title.textContent = "Beng AI | Home";
 	return (
 		<div className="homecontent">
 			<div className="head">
-				<h1 data-content="Welcome">Welcome to My website</h1>
+				<h1 data-content="Welcome"></h1>
 				<div className="offers">
 					<div className="cards">
 						<div className="c1">
-							<div>A Student in Information Technology</div>
+							<div>AI powering Tech</div>
 							<div className="bgs b1"></div>
 						</div>
 						<div className="c1">
-							<div>A developing full-stack developer</div>
+							<div>AI in the Data World </div>
 							<div className="bgs b2"></div>
 						</div>
 						<div className="c1">
-							<div>AI Enthusiast</div>
+							<div>Super Intelligence with AI</div>
 							<div className="bgs b3"></div>
 						</div>
 					</div>
 				</div>
-                <div className="description">
-                    <div>Looking for how to build good, user-friendly, and competitive websites?</div>
-                    <div>Then Contact me:</div>
-                    <div className="contactButton">
-                        <button type="button">Contact Me</button>
-                    </div>
-                </div>
+
+                <section className="description">
+					<div className="des">
+						<div>Develop and do more with AI</div>
+						<div className="aiNames">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						
+					</div>
+				</section>
 				<div className="getStarted">
 					<NavLink to="/about">
 						<button type="button">Know more</button>
