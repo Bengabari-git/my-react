@@ -1,6 +1,6 @@
 import { Navbar} from "./Components/cp2";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import Contact from "./Components/Contact"
+// import Contact from "./Components/Contact"
 import Loader from "./Components/Loader";
 import Layout from "./Components/Layout";
 import "./App.css";
